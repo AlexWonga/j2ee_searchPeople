@@ -21,6 +21,7 @@ public class SearchServlet extends HttpServlet {
                     .sheet()
                     .headRowNumber(1)
                     .doReadSync();
+            writer.println("<h1>find people</h1>");
             for (Person person : personList) {
                 String ID = person.ID;
                 String name = person.name;
@@ -31,6 +32,7 @@ public class SearchServlet extends HttpServlet {
                     writer.println("<p>personal info ID:" + ID + " name:" + name + " telephone:" + tel + " QQ:" + QQ + " email:" + email + "</p>");
                 }
             }
+
 
     }
 }
