@@ -1,9 +1,10 @@
+package pojo;
 import com.alibaba.excel.annotation.ExcelProperty;
 import lombok.Data;
 @Data
 public class Person {
     @ExcelProperty(index = 0)
-    public String ID;
+    public String id;
 
     @ExcelProperty(index = 1)
     public String name;
@@ -12,7 +13,7 @@ public class Person {
     public String telephone;
 
     @ExcelProperty(index = 3)
-    public String QQ;
+    public String qq;
 
     @ExcelProperty(index = 4)
     public String email;

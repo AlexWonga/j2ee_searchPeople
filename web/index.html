@@ -2,16 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>软院找人</title>
+    <title>软院找人系统</title>
+    <style type="text/css">
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            border: 2px solid black;
+            margin: 200px auto 0;
+            width: 480px;
+            text-align: center;
+        }
+
+        .searchBar {
+            padding: 24px;
+        }
+
+        input{
+            height: 32px;
+            padding: 4px 4px;
+            border-radius: 2px;
+        }
+
+    </style>
 </head>
-<body>
-<h1>软院找人系统</h1>
-<form action="search" method="post">
-    关键词
-    <label>
-        <input type="text" name="keyword">
-    </label>
-    <input type="submit" value="提交">
-</form>
+<body style="background-color: 	white;">
+
+<div class="card">
+    <h1>软院找人</h1>
+    <div class="searchBar">
+        <form action="search" method="get">
+            <label>
+                <input name="keyword" type="text" style="width: 300px">
+            </label>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
